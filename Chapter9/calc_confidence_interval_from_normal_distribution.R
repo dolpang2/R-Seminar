@@ -1,5 +1,5 @@
 kConfidenceCoefficient <- 0.95
-kAlpah <- 1 - kConfidenceCoefficient
+kAlpha <- 1 - kConfidenceCoefficient
 
 sample.mean <- 5  # sample's mean
 sample.standard.deviation <- 2  # s(Sample's standard deviation)

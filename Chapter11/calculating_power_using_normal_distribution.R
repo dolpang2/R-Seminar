@@ -14,8 +14,10 @@ left
 right
 
 assumed <- sample.mean + 1.5
-gaussian.left <- (left - assumed) / (sample.standard.deviation / sqrt(sample.size))
-gaussian.right <- (right - assumed) / (sample.standard.deviation / sqrt(sample.size))
+gaussian.left <- (left - assumed) / 
+  (sample.standard.deviation / sqrt(sample.size))
+gaussian.right <- (right - assumed) / 
+  (sample.standard.deviation / sqrt(sample.size))
 
 beta <- pnorm(gaussian.right) - pnorm(gaussian.left)
 beta

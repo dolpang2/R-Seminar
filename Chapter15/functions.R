@@ -1,5 +1,5 @@
 newDef <- function(a, b) {
-  x <- runif(10, a, b)
+  x <- runif(10, a, b)  # generate unif distrubition
   mean(x)
 }
 

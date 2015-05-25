@@ -6,20 +6,20 @@ Agent <- setClass(# Set the name for the class
                   Class = "Agent",  
                   
                   # Define the slots
-                  # Similar to C++ fields declaration
+                  # Similar to Java fields declaration
                   # double location
                   # double velocity
-                  # bool active
+                  # boolean active
                   slots = c(location = "numeric", 
                             velocity = "numeric", 
                             active = "logical"),
                   
                   # Set the default values for the slots. (optional)
-                  # Similar to C++ default constructor
+                  # Similar to Java default constructor
                   # Agent() {
-                  #   this->location = 0.0;
-                  #   this->velocity = 0.0;
-                  #   this->active = true;
+                  #   this.location = 0.0;
+                  #   this.velocity = 0.0;
+                  #   this.active = true;
                   # }
                   prototype = list(location = c(0.0, 0.0), 
                                    velocity = c(0.0, 0.0), 
@@ -35,4 +35,4 @@ Agent <- setClass(# Set the name for the class
                     }
                     return(TRUE)
                   }
-                )
+)

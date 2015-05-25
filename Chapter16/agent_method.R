@@ -81,7 +81,8 @@ setMethod(f = "getVelocity",
 setGeneric(name = "resetActivity", 
            def = function(theObject, value) {
              standardGeneric("resetActivity")
-           })
+           }
+)
 
 setMethod(f = "resetActivity", 
           signature = c("Agent", "logical"), 
@@ -89,7 +90,8 @@ setMethod(f = "resetActivity",
             theObject <- setActive(theObject, value)
             theObject <- setVelocity(theObject, c(0.0, 0.0))
             return(theObject)
-          })
+          }
+)
 
 setMethod(f = "resetActivity", 
           signature = c("Agent", "numeric"), 
@@ -97,4 +99,5 @@ setMethod(f = "resetActivity",
             theObject <- setActive(theObject, TRUE)
             theObject <- setVelocity(theObject, value)
             return(theObject)
-})
+          }
+)
